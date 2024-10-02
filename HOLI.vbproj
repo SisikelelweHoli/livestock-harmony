@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99C4F12E-2618-4AC1-85BA-4D587C2D0F0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>HOLI.My.MyApplication</StartupObject>
+    <RootNamespace>HOLI</RootNamespace>
+    <AssemblyName>HOLI</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>HOLI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>HOLI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forgot Password.Designer.vb">
+      <DependentUpon>Forgot Password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forgot Password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb" />
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Livestock.Designer.vb">
+      <DependentUpon>Livestock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Livestock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="livestockDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>livestockDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="livestockDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>livestockDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="livestockDataSet14.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>livestockDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="livestockDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>livestockDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="livestocksDataSet11.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>livestocksDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="livestocksDataSet18.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>livestocksDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="livestocksDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>livestocksDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="livestocksDataSet21.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>livestocksDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="livestocksDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>livestocksDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="livestocksDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>livestocksDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="livestocksDataSet5.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>livestocksDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="livestocksDataSet50.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>livestocksDataSet50.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="livestocksDataSet6.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>livestocksDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="livestocksDataSet7.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>livestocksDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Registration.Designer.vb">
+      <DependentUpon>Registration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="retrieve personal details.Designer.vb">
+      <DependentUpon>retrieve personal details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="retrieve personal details.vb" />
+    <Compile Include="VIEW PURCHASE HISTORY.Designer.vb">
+      <DependentUpon>VIEW PURCHASE HISTORY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW PURCHASE HISTORY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Livestock.resx">
+      <DependentUpon>Livestock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="retrieve personal details.resx">
+      <DependentUpon>retrieve personal details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW PURCHASE HISTORY.resx">
+      <DependentUpon>VIEW PURCHASE HISTORY.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="livestockDataSet.xsc">
+      <DependentUpon>livestockDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="livestockDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>livestockDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="livestockDataSet.xss">
+      <DependentUpon>livestockDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="livestockDataSet1.xsc">
+      <DependentUpon>livestockDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="livestockDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>livestockDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="livestockDataSet1.xss">
+      <DependentUpon>livestockDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="livestockDataSet14.xsc">
+      <DependentUpon>livestockDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="livestockDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>livestockDataSet14.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="livestockDataSet14.xss">
+      <DependentUpon>livestockDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="livestockDataSet2.xsc">
+      <DependentUpon>livestockDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="livestockDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>livestockDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="livestockDataSet2.xss">
+      <DependentUpon>livestockDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="livestocksDataSet11.xsc">
+      <DependentUpon>livestocksDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="livestocksDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>livestocksDataSet11.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="livestocksDataSet11.xss">
+      <DependentUpon>livestocksDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="livestocksDataSet18.xsc">
+      <DependentUpon>livestocksDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="livestocksDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>livestocksDataSet18.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="livestocksDataSet18.xss">
+      <DependentUpon>livestocksDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="livestocksDataSet2.xsc">
+      <DependentUpon>livestocksDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="livestocksDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>livestocksDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="livestocksDataSet2.xss">
+      <DependentUpon>livestocksDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="livestocksDataSet21.xsc">
+      <DependentUpon>livestocksDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="livestocksDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>livestocksDataSet21.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="livestocksDataSet21.xss">
+      <DependentUpon>livestocksDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="livestocksDataSet3.xsc">
+      <DependentUpon>livestocksDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="livestocksDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>livestocksDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="livestocksDataSet3.xss">
+      <DependentUpon>livestocksDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="livestocksDataSet4.xsc">
+      <DependentUpon>livestocksDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="livestocksDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>livestocksDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="livestocksDataSet4.xss">
+      <DependentUpon>livestocksDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="livestocksDataSet5.xsc">
+      <DependentUpon>livestocksDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="livestocksDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>livestocksDataSet5.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="livestocksDataSet5.xss">
+      <DependentUpon>livestocksDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="livestocksDataSet50.xsc">
+      <DependentUpon>livestocksDataSet50.xsd</DependentUpon>
+    </None>
+    <None Include="livestocksDataSet50.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>livestocksDataSet50.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="livestocksDataSet50.xss">
+      <DependentUpon>livestocksDataSet50.xsd</DependentUpon>
+    </None>
+    <None Include="livestocksDataSet6.xsc">
+      <DependentUpon>livestocksDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="livestocksDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>livestocksDataSet6.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="livestocksDataSet6.xss">
+      <DependentUpon>livestocksDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="livestocksDataSet7.xsc">
+      <DependentUpon>livestocksDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="livestocksDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>livestocksDataSet7.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="livestocksDataSet7.xss">
+      <DependentUpon>livestocksDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="livestock.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="livestocks.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\_MG_4805_pe1.jpg" />
+    <None Include="Resources\_MG_4805_pe.jpg" />
+    <None Include="Resources\542efc0f9d576.image.jpg" />
+    <None Include="Resources\back_icon_1557781.png" />
+    <None Include="Resources\back_icon_155778.png" />
+    <None Include="Resources\th.jpeg" />
+    <None Include="Resources\OIP1.jpeg" />
+    <None Include="Resources\OIP.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
